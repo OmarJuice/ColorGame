@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+    <link rel="stylesheet" href="color.css">
+    <!-- <link rel="stylesheet" href="debug.css"> -->
+</head>
+
+<body>
+
+    <section id="hero" class="hero has-text-centered" style="background-color: cadetblue">
+        <div class="hero-body">
+            <div class="container">
+                <h1 id="title" class="title heavy shadow">
+                    GUESS
+                </h1>
+                <h1 id="trueColor" class="title is-1 heavy">#000000</h1>
+                <h2 id="title2" class="subtitle is-4 heavy shadow">
+                    THE COLOR
+                </h2>
+                <h3 class="subtitle is-5">*Press any key for new colors*</h3>
+            </div>
+        </div>
+    </section>
+
+    <div id="bar">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-1-desktop"></div>
+                <div id="newButton" class="column is-3 has-text-centered"><span id="newCol">NEW COLORS</span></div>
+                <div class="column is-4 has-text-centered"><span id="tryer">Go Ahead!</span></div>
+                <div id="difficulty" class="column is-3 has-text-centered">
+                    <span id="easy" class="difficulty active">EASY</span><span id="hard" class="difficulty inactive">HARD</span>
+                </div>
+                <div class="column is-1 desktop"></div>
+        </div>
+    </div>
+    
+    <section id="board" class="section has-background-black">
+        <div class="container">
+            <div id="row1" class="columns is-centered flex">
+                <div id="box0" class="column is-one-fifth is-one-quarter-tablet is-one-third-mobile">
+                    <div class="box"></div>
+                </div>
+                
+                <div id="box1" class="column is-one-fifth is-one-quarter-tablet is-one-third-mobile">
+                    <div class="box"></div>
+                </div>
+                
+                <div id="box2" class="column is-one-fifth is-one-quarter-tablet is-one-third-mobile">
+                    <div class="box"></div>
+                </div>
+                
+            </div>
+            <div id="row2" class="columns is-centered flex">
+                <div id="box3" class="column is-one-fifth is-one-quarter-tablet is-one-third-mobile row2 vanish">
+                    <div class="box"></div>
+                </div>
+                
+                <div id="box4" class="column is-one-fifth is-one-quarter-tablet is-one-third-mobile row2 vanish">
+                    <div class="box"></div>
+                </div>
+                
+                <div id="box5" class="column is-one-fifth is-one-quarter-tablet is-one-third-mobile row2 vanish">
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="color.js"></script>
+</body>
+
+</html>
