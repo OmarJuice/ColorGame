@@ -53,14 +53,12 @@ function newColors() {
     
     let colnum = Math.floor(Math.random() * 16777216);
     let col = colnum.toString(16).toUpperCase();
-    console.log(colnum, col);
     if(col.length < 6){
         let len = col.length
         for(let i = 0; i < 6 - len; i++){
             col = `${0}${col}`
             console.log('added');
         }
-        console.log(col);
     }
     correctColor = `#${col}`;
 

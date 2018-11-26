@@ -52,6 +52,20 @@
 #board{
     height: 520px;
 }
+#trueColor{
+    margin-top: -20px;
+    font-size: 70px;
+}
+.hero{
+    margin-top: -50px;
+    transition: all .5s;
+}
+.heavy{
+    font-weight: 900;
+}
+.shadow{
+    text-shadow: 1px 1px black
+}
 @media only screen and (max-width: 1000px) {
     #board{
         height: 500px;
@@ -62,19 +76,14 @@
     }
     
 }
-.heavy{
-    font-weight: 900;
-}
-.shadow{
-    text-shadow: 1px 1px black
-}
+
 @media only screen and (max-width: 768px){
     #board{
         height: 450px;
     }
     
     .box{
-        height: 100px;
+        height: 80px;
     }
     .spacer{
         display: none;
@@ -83,12 +92,8 @@
         display: flex;
         flex-direction: column;
     }
+    #trueColor{
+        font-size: 3.5rem;
+    }
 }
-.hero{
-    margin-top: -50px;
-    transition: all .5s;
-}
-#trueColor{
-    margin-top: -20px;
-    font-size: 70px;
-}
+
